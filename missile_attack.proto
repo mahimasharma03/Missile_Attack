@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package missile_attack;
+
+service Attack {
+  rpc assign (Request) returns (Response);
+}
+
+message Request {
+  int32 M=1;
+}
+
+message Response {
+  int32 x=1;
+  int32 y=2;
+  int32 radius=3;
+}
+
